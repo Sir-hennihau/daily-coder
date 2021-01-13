@@ -1,21 +1,25 @@
 {
-    "name": "daily-coder",
-    "displayName": "Daily Coder",
-    "description": "A color theme that provides you a productive atmosphere during your daily challenges.",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.52.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Daily Coder",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Daily Coder-color-theme.json"
-            }
-        ]
-    }
+  "name": "daily-coder",
+  "displayName": "Daily Coder",
+  "description": "A color theme that provides you a productive atmosphere during your daily challenges.",
+  "version": "0.0.1",
+  "publisher": "sirhennihau",
+  "repository": {
+    "url": "https://github.com/Sir-hennihau/daily-coder"
+  },
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Daily Coder",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Daily Coder-color-theme.json"
+      }
+    ]
+  }
 }
