@@ -48,7 +48,7 @@
     "editor.lineHighlightBackground": "#222222",
     "editor.rangeHighlightBackground": "#222222",
     "editor.rangeHighlightBorder": "#222222",
-    "editor.selectionBackground": "#222222",
+    "editor.selectionBackground": "#555555",
     "editor.selectionForeground": "#dddddd",
     "editor.selectionHighlightBackground": "#363636",
     "editor.selectionHighlightBorder": "#00000000",
@@ -242,9 +242,8 @@
     "statusBar.background": "#0a0a0a",
     "statusBar.border": "#000000",
     "statusBar.debuggingBackground": "#efd72c",
-    "statusBar.debuggingBorder": "#efd72c",
     "statusBar.debuggingForeground": "#0c0c0c",
-    "statusBar.foreground": "#1d4ba1",
+    "statusBar.foreground": "#b1b1b1",
     "statusBar.noFolderBackground": "#000000",
     "statusBar.noFolderBorder": "#000000",
     "statusBar.noFolderForeground": "#dddddd",
@@ -257,7 +256,7 @@
     "tab.activeForeground": "#dddddd",
     "tab.activeModifiedBorder": "#dddddd",
     "tab.border": "#161616",
-    "tab.hoverBackground": "#dfa621",
+    "tab.hoverBackground": "#efd72c",
     "tab.hoverForeground": "#030955",
     "tab.inactiveBackground": "#0f0f0f",
     "tab.inactiveForeground": "#666666",
@@ -274,9 +273,9 @@
     "terminal.ansiBlack": "#333333",
     "terminal.ansiBlue": "#6a7ec8",
     "terminal.ansiBrightBlack": "#666666",
-    "terminal.ansiBrightBlue": "#7d7f83",
+    "terminal.ansiBrightBlue": "#9e9e9e",
     "terminal.ansiBrightCyan": "#67a3c8",
-    "terminal.ansiBrightGreen": "#1d4ba1",
+    "terminal.ansiBrightGreen": "#3688c0",
     "terminal.ansiBrightMagenta": "#b84b44",
     "terminal.ansiBrightRed": "#e24d2f",
     "terminal.ansiBrightWhite": "#f8f8f2",
@@ -296,8 +295,8 @@
     "textBlockQuote.background": "#363636",
     "textBlockQuote.border": "#666666",
     "textCodeBlock.background": "#161616",
-    "textLink.activeForeground": "#008ae5",
-    "textLink.foreground": "#007acc",
+    "textLink.activeForeground": "#97bbd1",
+    "textLink.foreground": "#67a3c8",
     "textPreformat.foreground": "#e6db74",
     "textSeparator.foreground": "#666666",
     "titleBar.activeBackground": "#161616",
@@ -321,7 +320,7 @@
       "name": "Comment",
       "scope": "comment",
       "settings": {
-        "foreground": "#505050",
+        "foreground": "#636363",
         "fontStyle": "italic"
       }
     },
@@ -351,7 +350,7 @@
       "name": "Built-in constant",
       "scope": "constant.language",
       "settings": {
-        "foreground": "#675cab"
+        "foreground": "#666eb6"
       }
     },
     {

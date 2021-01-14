@@ -1,10 +1,12 @@
 enum Colors {
+  BLUE = "#3688c0",
   BLUE_DARKEST = "#030955",
   BLUE_DARK = "#1d4ba1",
   BLUE_LIGHT = "#67a3c8",
   BLUE_LIGHTEST = "#97bbd1",
   BLUE_GRAY = "#4c87c1",
   PURPLE = "#675cab",
+  PURPLE_LIGHT = "#666eb6",
   PURPLE_DARK = "#735591",
   YELLOW = "#efd72c",
   YELLOW_DARK = "#dfa61b",
