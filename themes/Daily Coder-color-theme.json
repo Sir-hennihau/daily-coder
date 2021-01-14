@@ -136,7 +136,7 @@
     "gitDecoration.ignoredResourceForeground": "#777777",
     "gitDecoration.modifiedResourceForeground": "#efd72c",
     "gitDecoration.submoduleResourceForeground": "#67a3c8",
-    "gitDecoration.untrackedResourceForeground": "#030955",
+    "gitDecoration.untrackedResourceForeground": "#3688c0",
     "input.background": "#363636",
     "input.border": "#363636",
     "input.foreground": "#dddddd",
@@ -336,7 +336,7 @@
       "name": "String Template",
       "scope": "string.template",
       "settings": {
-        "foreground": "#1d4ba1"
+        "foreground": "#666eb6"
       }
     },
     {
