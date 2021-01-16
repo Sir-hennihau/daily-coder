@@ -127,11 +127,11 @@
     "foreground": "#dddddd",
     "gitDecoration.addedResourceForeground": "#67a3c8",
     "gitDecoration.conflictingResourceForeground": "#e24d2f",
-    "gitDecoration.deletedResourceForeground": "#d46345",
+    "gitDecoration.deletedResourceForeground": "#b84b44",
     "gitDecoration.ignoredResourceForeground": "#777777",
     "gitDecoration.modifiedResourceForeground": "#efd72c",
     "gitDecoration.submoduleResourceForeground": "#67a3c8",
-    "gitDecoration.untrackedResourceForeground": "#1d4ba1",
+    "gitDecoration.untrackedResourceForeground": "#666eb6",
     "input.background": "#363636",
     "input.border": "#363636",
     "input.foreground": "#dddddd",
@@ -305,6 +305,12 @@
       }
     },
     {
+      "scope": ["punctuation.definition.template-expression"],
+      "settings": {
+        "foreground": "#f8eb82"
+      }
+    },
+    {
       "name": "Comment",
       "scope": "comment",
       "settings": {
@@ -324,7 +330,17 @@
       "name": "String Template",
       "scope": "string.template",
       "settings": {
-        "foreground": "#666eb6"
+        "foreground": "#97bbd1"
+      }
+    },
+    {
+      "name": "String Template",
+      "scope": [
+        "punctuation.definition.string.template.end",
+        "punctuation.definition.string.template.begin"
+      ],
+      "settings": {
+        "foreground": "#dd6236"
       }
     },
     {
