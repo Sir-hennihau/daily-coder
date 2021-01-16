@@ -2,10 +2,13 @@
   "name": "daily-coder",
   "displayName": "Daily Coder",
   "description": "A color theme that provides you a productive atmosphere during your daily challenges.",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "publisher": "sirhennihau",
   "repository": {
     "url": "https://github.com/Sir-hennihau/daily-coder"
+  },
+  "scripts": {
+    "package": "vsce package"
   },
   "engines": {
     "vscode": "^1.52.0"
