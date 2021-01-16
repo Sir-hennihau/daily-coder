@@ -10,7 +10,6 @@ enum Colors {
   PURPLE_DARK = "#735591",
   YELLOW = "#efd72c",
   YELLOW_DARK = "#dfa61b",
-  YELLOW_DARKEST = "#dfa621",
   YELLOW_LIGHT = "#f8eb82",
   YELLOW_LIGHTEST = "#f0e9bd",
   PINK = "#ac5685",
@@ -24,5 +23,4 @@ enum Colors {
   WHITE = "#e2e2e2",
   BLACK = "#161616",
   BACKGROUND = "#0f0f0f",
-  GRAY = "#",
 }
