@@ -4,6 +4,7 @@
   "description": "A color theme that provides you a productive atmosphere during your daily challenges.",
   "version": "1.0.4",
   "publisher": "sirhennihau",
+  "icon": "images/logo_scaled.png",
   "repository": {
     "url": "https://github.com/Sir-hennihau/daily-coder"
   },
