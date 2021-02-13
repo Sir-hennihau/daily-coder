@@ -18,9 +18,14 @@ enum Colors {
   PINK_DARK = "#9b3867",
   RED = "#e24d2f",
   RED_DARK = "#b84b44",
+  RED_DARKEST = "#4d1410",
   ORANGE = "#dd6236",
   ORANGE_DARK = "#d46345",
+
   WHITE = "#e2e2e2",
   BLACK = "#161616",
+
   BACKGROUND = "#0f0f0f",
+  HOVER_BACKGROUND = "#2e2e2e",
+  SELECT_BACKGROUND = "#363636",
 }
