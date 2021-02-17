@@ -41,7 +41,7 @@
     "editor.inactiveSelectionBackground": "#08436860",
     "editor.lineHighlightBackground": "#222222",
     // "editor.rangeHighlightBackground": "#5e5e5e5d",
-    "editor.selectionBackground": "#084368b2",
+    "editor.selectionBackground": "#062b42",
     "editor.selectionForeground": "#dddddd",
     "editor.selectionHighlightBackground": "#363636",
     "editor.snippetFinalTabstopHighlightBackground": "#ffffff20",
