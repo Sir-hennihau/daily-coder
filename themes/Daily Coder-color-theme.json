@@ -1,5 +1,5 @@
 {
-  "name": "Monokai Night",
+  "name": "Daily Coder",
   "type": "dark",
   "colors": {
     "activityBar.background": "#000000",
@@ -162,10 +162,10 @@
     "menubar.selectionBorder": "#00000000",
     "menubar.selectionForeground": "#dddddd",
     "merge.border": "#000000aa",
-    "merge.currentContentBackground": "#0b0d2c",
-    "merge.currentHeaderBackground": "#040a14",
-    "merge.incomingContentBackground": "#271e08",
-    "merge.incomingHeaderBackground": "#2e2a0c",
+    "merge.currentContentBackground": "#0b0d2ca6",
+    "merge.currentHeaderBackground": "#040a14be",
+    "merge.incomingContentBackground": "#4d1410a4",
+    "merge.incomingHeaderBackground": "#310b08ab",
     "minimap.findMatchHighlight": "#efd72c",
     "notificationCenter.border": "#464646",
     "notificationCenterHeader.background": "#464646",
@@ -320,7 +320,7 @@
       "name": "String Template",
       "scope": "string.template",
       "settings": {
-        "foreground": "#97bbd1"
+        "foreground": "#f8eb82"
       }
     },
     {
@@ -421,8 +421,8 @@
       "name": "Tag name",
       "scope": "entity.name.tag",
       "settings": {
-        "fontStyle": "",
-        "foreground": "#97bbd1"
+        "fontStyle": "bold",
+        "foreground": "#327eb1"
       }
     },
     {
@@ -450,13 +450,24 @@
       }
     },
     {
+      // JSX
+      "name": "Library class/type",
+      "scope": "support.class.component.js",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#327EB1"
+      }
+    },
+    {
+      // stuff like new RegExp()
       "name": "Library class/type",
       "scope": "support.type, support.class",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#3688c0"
+        "fontStyle": "",
+        "foreground": "#327EB1"
       }
     },
+
     {
       "name": "Library variable",
       "scope": "support.other.variable",
