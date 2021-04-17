@@ -18,9 +18,7 @@ Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue an
 
 # Other
 
--   This theme is trying to be as low contrast as possible to reduce your eye strain
--   If you need any change, you can open an issue or pull request on Github
--   [Material Theme Icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons) are recommended to go with the Daily Coder theme.
+[Material Theme Icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons) are recommended to go with the Daily Coder theme.
 
 This theme is mostly tested with React and NodeJS. If a feature or language is not well colorized, please [open an issue](https://github.com/Sir-hennihau/daily-coder/issues)! :)
 
