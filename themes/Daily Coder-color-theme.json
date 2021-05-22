@@ -34,9 +34,12 @@
         "dropdown.foreground": "#dddddd",
         "dropdown.listBackground": "#363636",
         "editor.background": "#161616",
-        "editor.findMatchBackground": "#4d1410",
-        "editor.findMatchHighlightBackground": "#4d4d4d",
-        "editor.findRangeHighlightBackground": "#686868a6",
+
+        // Controls both local and global search
+        "editor.findMatchBackground": "#e24d2fa9",
+        "editor.findMatchHighlightBackground": "#5a5a5aab",
+        "editor.findRangeHighlightBackground": "#a7a7a7a6",
+
         "editor.focusedStackFrameHighlightBackground": "#838383c9",
         "editor.foreground": "#dddddd",
         "editor.hoverHighlightBackground": "#363636ce",
@@ -198,10 +201,11 @@
         "pickerGroup.border": "#262626",
         "pickerGroup.foreground": "#666666",
         "progressBar.background": "#363636",
-        "scrollbar.shadow": "#00000000",
-        "scrollbarSlider.activeBackground": "#f2f2f218",
-        "scrollbarSlider.background": "#f2f2f212",
-        "scrollbarSlider.hoverBackground": "#f2f2f224",
+
+        "scrollbarSlider.activeBackground": "#86868696",
+        "scrollbarSlider.background": "#5e5e5ea2",
+        "scrollbarSlider.hoverBackground": "#686868a2",
+
         "selection.background": "#aaaaaa",
         "settings.checkboxBackground": "#363636",
         "settings.checkboxBorder": "#363636",

@@ -32,5 +32,6 @@ enum Colors {
     BLACK = "#161616",
 
     BACKGROUND = "#0f0f0f",
+    BACKGROUND_BRIGHTER = "#161616",
     HOVER_BACKGROUND = "#2e2e2e",
 }
