@@ -29,7 +29,7 @@ enum Colors {
     ORANGE_LIGHT = "#d19078",
 
     WHITE = "#e2e2e2",
-    BLACK = "#161616",
+    BLACK = "#000000",
 
     BACKGROUND = "#0f0f0f",
     BACKGROUND_BRIGHTER = "#161616",
