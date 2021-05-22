@@ -480,8 +480,8 @@
             "name": "Tag name",
             "scope": "entity.name.tag, support.class.component",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#3688c0"
+                "fontStyle": "italic",
+                "foreground": "#67a3c8"
             }
         },
         {
