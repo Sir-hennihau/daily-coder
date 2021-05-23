@@ -8,7 +8,7 @@ Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue an
 
 # Previews
 
-![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code_only.png)
+![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
 
 ![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/component.png)
 
