@@ -4,7 +4,7 @@ A **blue-yellow** color theme for everyone who wants to work within a productive
 
 Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue and Yellow Woman"
 
-![Ricardo Garces - Blue Yellow Woman](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/ricardo_garces_blue_yellow_woman.jpg)
+![Ricardo Garces - Blue Yellow Woman](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/ricardo-garces-blue-yellow-woman.jpg)
 
 # Previews
 
@@ -12,9 +12,13 @@ Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue an
 
 ![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/component.png)
 
-![Library code 1](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/library_1.png)
+![Library code 1](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/express.png)
 
-![Library code 2](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/library_2.png)
+![Library code 2](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/python.png)
+
+![Java](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/java.png)
+
+![Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/fullscreen.png)
 
 # Other
 

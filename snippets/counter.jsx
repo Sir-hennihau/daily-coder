@@ -4,15 +4,18 @@ import { render } from "react-dom";
 
 function useCounter(initialState = 0) {
     let [count, setCount] = useState(initialState);
+
     let decrement = () => setCount(count - 1);
     let increment = () => setCount(count + 1);
+
     return { count, decrement, increment };
 }
 
 let Counter = createContainer(useCounter);
 
-function CounterDisplay() {
+const CounterDisplay = () => {
     let counter = Counter.useContainer();
+
     return (
         <div>
             <button onClick={counter.decrement}>-</button>
@@ -20,21 +23,19 @@ function CounterDisplay() {
             <button onClick={counter.increment}>+</button>
         </div>
     );
-}
+};
 
-function App() {
-    return (
-        <Counter.Provider>
-            <CounterDisplay />
-            <Counter.Provider initialState={2}>
+const App = () => (
+    <Counter.Provider>
+        <CounterDisplay />
+        <Counter.Provider initialState={2}>
+            <div>
                 <div>
-                    <div>
-                        <CounterDisplay />
-                    </div>
+                    <CounterDisplay />
                 </div>
-            </Counter.Provider>
+            </div>
         </Counter.Provider>
-    );
-}
+    </Counter.Provider>
+);
 
 render(<App />, document.getElementById("root"));
