@@ -37,8 +37,8 @@
         "editor.background": "#000000",
 
         // Controls both local and global search
-        "editor.findMatchBackground": "#efd82c5d",
-        "editor.findMatchHighlightBackground": "#3689c05d",
+        "editor.findMatchBackground": "#efd82c49",
+        "editor.findMatchHighlightBackground": "#efd82c44",
         "editor.findRangeHighlightBackground": "#a7a7a7a6",
 
         "editor.focusedStackFrameHighlightBackground": "#838383c9",
@@ -46,9 +46,9 @@
         "editor.hoverHighlightBackground": "#363636ce",
 
         "editor.selectionBackground": "#062b42",
-        "editor.inactiveSelectionBackground": "#062b42",
+        "editor.inactiveSelectionBackground": "#041c2b",
 
-        "editor.lineHighlightBackground": "#222",
+        "editor.lineHighlightBackground": "#151515",
         "editor.lineHighlightBorder": "#00000000",
 
         "editor.selectionForeground": "#dddddd",
