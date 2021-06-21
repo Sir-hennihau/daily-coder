@@ -28,10 +28,19 @@ enum Colors {
     ORANGE_DARK = "#d46345",
     ORANGE_LIGHT = "#d19078",
 
-    WHITE = "#e2e2e2",
+    WHITE = "#dddddd",
     BLACK = "#000000",
 
-    BACKGROUND = "#0f0f0f",
-    BACKGROUND_BRIGHTER = "#161616",
-    HOVER_BACKGROUND = "#2e2e2e",
+    GRAY_1 = "#111",
+    GRAY_2 = "#222",
+    GRAY_3 = "#333",
+    GRAY_4 = "#444",
+    GRAY_5 = "#555",
+    GRAY_6 = "#666",
+    GRAY_7 = "#777",
+    GRAY_8 = "#888",
+    GRAY_9 = "#999",
+    GRAY_10 = "#aaa",
+    GRAY_11 = "#bbb",
+    GRAY_12 = "#ccc",
 }

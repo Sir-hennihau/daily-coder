@@ -1,22 +1,16 @@
 # Daily Coder
 
-A **blue-yellow** color theme for everyone who wants to work within a productive environment.
+A **blue yellow** color theme for everyone who wants to work within a productive environment.
 
 Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue and Yellow Woman"
 
 ![Ricardo Garces - Blue Yellow Woman](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/ricardo-garces-blue-yellow-woman.jpg)
 
+Suited for people with red green color blindness (deuteranopia).
+
 # Previews
 
-![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
-
-![Component with full editor](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/component.png)
-
-![Library code 1](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/express.png)
-
-![Library code 2](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/python.png)
-
-![Java](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/java.png)
+![Component](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
 
 ![Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/fullscreen.png)
 

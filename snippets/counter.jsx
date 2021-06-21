@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import { createContainer } from "../src/unstated-next";
 import { render } from "react-dom";
+import { createContainer } from "../src/unstated-next";
 
-function useCounter(initialState = 0) {
-    let [count, setCount] = useState(initialState);
+const useCounter = (initialState = 0) => {
+    const [count, setCount] = useState(initialState);
 
-    let decrement = () => setCount(count - 1);
-    let increment = () => setCount(count + 1);
+    const decrement = () => setCount(count - 1);
+    const increment = () => setCount(count + 1);
 
     return { count, decrement, increment };
-}
+};
 
-let Counter = createContainer(useCounter);
+const Counter = createContainer(useCounter);
 
 const CounterDisplay = () => {
-    let counter = Counter.useContainer();
+    const counter = Counter.useContainer();
 
     return (
         <div>
