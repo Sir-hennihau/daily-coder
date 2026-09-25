@@ -9,7 +9,8 @@
         "url": "https://github.com/Sir-hennihau/daily-coder"
     },
     "scripts": {
-        "package": "vsce package"
+        "package": "vsce package",
+        "audit:colors": "node scripts/audit-colors.mjs"
     },
     "engines": {
         "vscode": "^1.52.0"
