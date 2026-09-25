@@ -29,8 +29,8 @@ This repository is a VS Code color theme extension. Treat it as a design-focused
 - There is no automated test suite in this repo.
 - Run `npm run audit:colors -- --strict`; it also fails if the theme JSON doesn't parse.
 - The main validation path is packaging the VS Code extension:
-  - `npm install`
-  - `npm run package` (needs `vsce`; otherwise use `npx @vscode/vsce package`)
+    - `npm install`
+    - `npm run package` (needs `vsce`; otherwise use `npx @vscode/vsce package`)
 - If a change is purely visual, prefer checking the JSON structure and ensuring the theme still loads in VS Code.
 
 ## Files to inspect first
