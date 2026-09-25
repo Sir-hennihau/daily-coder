@@ -6,7 +6,8 @@ This repository is a VS Code color theme extension. Treat it as a design-focused
 
 - The extension entry point is [package.json](package.json); it contributes the "Daily Coder" theme.
 - The actual theme definition lives in [themes/Daily Coder-color-theme.json](themes/Daily Coder-color-theme.json).
-- The palette source used for the theme is [colors.ts](colors.ts), which defines the base colors used by the design.
+- "Daily Coder Vivid" ([themes/Daily Coder Vivid-color-theme.json](themes/Daily Coder Vivid-color-theme.json)) is generated from it by `npm run build:vivid`. Never edit it by hand.
+- The palette source used for the theme is [colors.ts](colors.ts): `palette` for Daily Coder, `vividPalette` for Daily Coder Vivid. Both come from Science Color Palette and share one luminance ladder, so a shade number has the same contrast in every family and in both palettes.
 - Documentation and product context are in [README.md](README.md).
 
 ## Working conventions
@@ -15,6 +16,7 @@ This repository is a VS Code color theme extension. Treat it as a design-focused
 - Preserve the existing visual identity: blue/yellow base palette, dark UI surfaces, and strong semantic colors for warnings/errors/infos.
 - Favor consistency across editor, sidebar, breadcrumbs, tabs, and debug UI. A color added in one section should usually match the overall theme language.
 - If a change affects the theme palette, update the source of truth in [colors.ts](colors.ts) when relevant, then verify the generated theme JSON remains valid.
+- Use only palette colors (optionally with an alpha suffix) and `#000000`; `build:vivid` fails on anything else. After editing the default theme, run `npm run build:vivid`.
 - Do not add unrelated runtime code or new build tooling for a color-only change.
 
 ## Color coverage
@@ -27,7 +29,7 @@ This repository is a VS Code color theme extension. Treat it as a design-focused
 ## Validation
 
 - There is no automated test suite in this repo.
-- Run `npm run audit:colors -- --strict`; it also fails if the theme JSON doesn't parse.
+- Run `npm run build:vivid`, then `npm run audit:colors -- --strict`; it also fails if the theme JSON doesn't parse.
 - The main validation path is packaging the VS Code extension:
     - `npm install`
     - `npm run package` (needs `vsce`; otherwise use `npx @vscode/vsce package`)

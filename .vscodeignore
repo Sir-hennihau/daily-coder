@@ -4,3 +4,7 @@
 vsc-extension-quickstart.md
 colors.ts
 scripts/**
+AGENTS.md
+.github/**
+images/**
+!images/logo-scaled.png

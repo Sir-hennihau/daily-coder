@@ -8,11 +8,41 @@ Inspired by [Ricardo Garces](https://twitter.com/artblogmunich?lang=en) "Blue an
 
 Suited for people with red green color blindness (deuteranopia).
 
+All colors come from one palette where every shade has the same contrast in every hue, so text stays readable (WCAG AA or better) wherever it appears: on the editor, under selections and search results, in diffs, popups and badges.
+
+Comes in two variants: **Daily Coder** and **Daily Coder Vivid**, the same theme with more saturated colors and identical contrast. Pick one with `Preferences: Color Theme`.
+
 # Previews
 
-![Component](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
+![React](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
 
 ![Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/fullscreen.png)
+
+## TypeScript
+
+![TypeScript](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/component.png)
+
+## JavaScript
+
+![JavaScript](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/express.png)
+
+## Python
+
+![Python](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/python.png)
+
+## Java
+
+![Java](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/java.png)
+
+## CSS
+
+![CSS](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/css.png)
+
+## Daily Coder Vivid
+
+![Daily Coder Vivid](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/vivid-code-only.png)
+
+![Daily Coder Vivid Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/vivid-fullscreen.png)
 
 # Other
 

@@ -2,7 +2,7 @@
     "name": "daily-coder",
     "displayName": "Daily Coder Color Theme",
     "description": "A color theme that provides you a productive atmosphere during your daily challenges.",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "publisher": "sirhennihau",
     "icon": "images/logo-scaled.png",
     "repository": {
@@ -10,7 +10,8 @@
     },
     "scripts": {
         "package": "vsce package",
-        "audit:colors": "node scripts/audit-colors.mjs"
+        "audit:colors": "node scripts/audit-colors.mjs",
+        "build:vivid": "node scripts/build-vivid.mjs"
     },
     "engines": {
         "vscode": "^1.52.0"
@@ -24,6 +25,11 @@
                 "label": "Daily Coder",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Daily Coder-color-theme.json"
+            },
+            {
+                "label": "Daily Coder Vivid",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Daily Coder Vivid-color-theme.json"
             }
         ]
     },

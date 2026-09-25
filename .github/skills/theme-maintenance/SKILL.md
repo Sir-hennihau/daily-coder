@@ -23,6 +23,7 @@ Key files:
 
 - [colors.ts](../../../colors.ts) — source of truth for palette definitions
 - [themes/Daily Coder-color-theme.json](../../../themes/Daily%20Coder-color-theme.json) — shipped theme JSON that VS Code reads
+- [themes/Daily Coder Vivid-color-theme.json](../../../themes/Daily%20Coder%20Vivid-color-theme.json) — generated from the default theme by `npm run build:vivid`; never edit it by hand
 - [package.json](../../../package.json) — extension metadata and packaging entry
 - [README.md](../../../README.md) — design intent and accessibility framing
 
@@ -50,6 +51,7 @@ Key files:
     - Keep semantic colors recognizable: warnings, errors, info, success, and modified states.
 
 5. Validate the result.
+    - Run `npm run build:vivid` to regenerate the vivid variant.
     - Run `npm run audit:colors -- --strict`: checks the JSON parses and that every VS Code root color is covered, with no deprecated or unknown keys. Only set root colors; let VS Code derive the rest (see AGENTS.md, "Color coverage").
     - Run the project validation path:
         - `npm install`
