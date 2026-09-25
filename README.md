@@ -12,37 +12,9 @@ All colors come from one palette where every shade has the same contrast in ever
 
 Comes in two variants: **Daily Coder** and **Daily Coder Vivid**, the same theme with more saturated colors and identical contrast. Pick one with `Preferences: Color Theme`.
 
-# Previews
+# Preview
 
-![React](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/code-only.png)
-
-![Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/fullscreen.png)
-
-## TypeScript
-
-![TypeScript](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/component.png)
-
-## JavaScript
-
-![JavaScript](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/express.png)
-
-## Python
-
-![Python](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/python.png)
-
-## Java
-
-![Java](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/java.png)
-
-## CSS
-
-![CSS](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/css.png)
-
-## Daily Coder Vivid
-
-![Daily Coder Vivid](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/vivid-code-only.png)
-
-![Daily Coder Vivid Fullscreen](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/vivid-fullscreen.png)
+![Daily Coder](https://raw.githubusercontent.com/Sir-hennihau/daily-coder/master/images/snippet.png)
 
 # Other
 

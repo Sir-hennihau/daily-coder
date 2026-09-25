@@ -1,134 +1,130 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 import imageCompression from "browser-image-compression";
 
 import Card from "react-bootstrap/Card";
 
-export default class imageCompressor extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            compressedLink:
-                "http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png",
-            originalImage: "",
-            originalLink: "",
-            clicked: false,
-            uploadImage: false,
-        };
-    }
+const PLACEHOLDER =
+    "http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png";
 
-    handle = (e) => {
-        const imageFile = e.target.files[0];
-        this.setState({
-            originalLink: URL.createObjectURL(imageFile),
-            originalImage: imageFile,
-            outputFileName: imageFile.name,
-            uploadImage: true,
-        });
-    };
+const COMPRESSION_OPTIONS = {
+    maxSizeMB: 1,
+    maxWidthOrHeight: 500,
+    useWebWorker: true,
+};
 
-    changeValue = (e) => {
-        this.setState({ [e.target.name]: e.target.value });
-    };
+// An object URL keeps its file in memory until revoked,
+// so free it once the file changes.
+function useObjectUrl(file) {
+    const [url, setUrl] = useState(null);
 
-    click = (e) => {
-        e.preventDefault();
-
-        const options = {
-            maxSizeMB: 1,
-            maxWidthOrHeight: 500,
-            useWebWorker: true,
-        };
-
-        if (options.maxSizeMB >= this.state.originalImage.size / 1024) {
-            alert("Image is too small, can't be Compressed!");
-            return 0;
+    useEffect(() => {
+        if (!file) {
+            setUrl(null);
+            return undefined;
         }
 
-        let output;
-        imageCompression(this.state.originalImage, options).then((x) => {
-            output = x;
+        const objectUrl = URL.createObjectURL(file);
+        setUrl(objectUrl);
+        return () => URL.revokeObjectURL(objectUrl);
+    }, [file]);
 
-            const downloadLink = URL.createObjectURL(output);
-            this.setState({
-                compressedLink: downloadLink,
-            });
-        });
+    return url;
+}
 
-        this.setState({ clicked: true });
-        return 1;
+export default function ImageCompressor() {
+    const [original, setOriginal] = useState(null);
+    const [compressed, setCompressed] = useState(null);
+    const [isCompressing, setIsCompressing] = useState(false);
+
+    const originalUrl = useObjectUrl(original);
+    const compressedUrl = useObjectUrl(compressed);
+
+    const handleFileChange = (event) => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+
+        setOriginal(file);
+        setCompressed(null);
     };
 
-    render() {
-        return (
-            <div className="m-5">
-                <div className="text-light text-center">
-                    <h1>Three Simple Steps</h1>
-                    <h3>1. Upload Image</h3>
-                    <h3>2. Click on Compress</h3>
-                    <h3>3. Download Compressed Image</h3>
+    const handleCompress = async () => {
+        const sizeInMB = original.size / 1024 / 1024;
+        if (sizeInMB <= COMPRESSION_OPTIONS.maxSizeMB) {
+            alert("Image is too small, can't be compressed!");
+            return;
+        }
+
+        setIsCompressing(true);
+        try {
+            setCompressed(
+                await imageCompression(original, COMPRESSION_OPTIONS)
+            );
+        } catch (error) {
+            console.error(error);
+            alert("Compression failed, please try another image.");
+        } finally {
+            setIsCompressing(false);
+        }
+    };
+
+    return (
+        <div className="m-5">
+            <div className="text-light text-center">
+                <h1>Three Simple Steps</h1>
+                <h3>1. Upload Image</h3>
+                <h3>2. Click on Compress</h3>
+                <h3>3. Download Compressed Image</h3>
+            </div>
+
+            <div className="row mt-5">
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <Card.Img
+                        className="ht"
+                        variant="top"
+                        src={originalUrl ?? PLACEHOLDER}
+                    />
+                    <div className="d-flex justify-content-center">
+                        <input
+                            type="file"
+                            accept="image/*"
+                            className="mt-2 btn btn-dark w-75"
+                            onChange={handleFileChange}
+                        />
+                    </div>
                 </div>
 
-                <div className="row mt-5">
-                    <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        {this.state.uploadImage ? (
-                            <Card.Img
-                                className="ht"
-                                variant="top"
-                                src={this.state.originalLink}
-                            ></Card.Img>
-                        ) : (
-                            <Card.Img
-                                className="ht"
-                                variant="top"
-                                src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"
-                            ></Card.Img>
-                        )}
-                        <div className="d-flex justify-content-center">
-                            <input
-                                type="file"
-                                accept="image/*"
-                                className="mt-2 btn btn-dark w-75"
-                                onChange={(e) => this.handle(e)}
-                            />
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-baseline">
-                        <br />
-                        {this.state.outputFileName ? (
-                            <button
-                                type="button"
-                                className=" btn btn-dark"
-                                onClick={(e) => this.click(e)}
-                            >
-                                Compress
-                            </button>
-                        ) : (
-                            <></>
-                        )}
-                    </div>
+                <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-baseline">
+                    {original && (
+                        <button
+                            type="button"
+                            className="btn btn-dark"
+                            disabled={isCompressing}
+                            onClick={handleCompress}
+                        >
+                            {isCompressing ? "Compressing…" : "Compress"}
+                        </button>
+                    )}
+                </div>
 
-                    <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
-                        <Card.Img
-                            variant="top"
-                            src={this.state.compressedLink}
-                        ></Card.Img>
-                        {this.state.clicked ? (
-                            <div className="d-flex justify-content-center">
-                                <a
-                                    href={this.state.compressedLink}
-                                    download={this.state.outputFileName}
-                                    className="mt-2 btn btn-dark w-75"
-                                >
-                                    Download
-                                </a>
-                            </div>
-                        ) : (
-                            <></>
-                        )}
-                    </div>
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-3">
+                    <Card.Img
+                        variant="top"
+                        src={compressedUrl ?? PLACEHOLDER}
+                    />
+                    {compressedUrl && (
+                        <div className="d-flex justify-content-center">
+                            <a
+                                href={compressedUrl}
+                                download={original.name}
+                                className="mt-2 btn btn-dark w-75"
+                            >
+                                Download
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
