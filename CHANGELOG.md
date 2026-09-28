@@ -4,6 +4,12 @@ All notable changes to the "daily-coder" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [2.0.1] - 2026-09-28
+
+### Changed
+
+- Selections and search matches are brighter, so they are easier to spot in the editor.
+
 ## [2.0.0] - 2026-09-25
 
 ### Added
